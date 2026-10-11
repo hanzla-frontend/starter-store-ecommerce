@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Starter Store | Everyday goods, made simply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div id="site-header"></div>
+
+<!-- 1. Hero -->
+<section class="hero hero-v2"><div class="wrap hero-grid">
+  <div class="hero-copy">
+    <div class="pill reveal"><span class="dot"></span> New season just dropped</div>
+    <h1 class="reveal">Everyday goods that feel <span class="rotator-wrap"><span class="rotator" id="rotator">special</span></span>.</h1>
+    <p class="lead reveal">Thoughtfully chosen products for home, travel, and daily life. Tap a piece to meet it.</p>
+    <div class="btns reveal">
+      <a class="btn" href="shop.html">Shop the collection</a>
+      <a class="btn ghost" href="about.html">Our story</a>
+    </div>
+    <div class="social-proof reveal">
+      <div class="avatars"><span>AK</span><span>DR</span><span>ML</span><span>+</span></div>
+      <p><strong>12,000+</strong> happy customers this year</p>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal" id="stage">
+    <div class="blob"></div>
+    <button class="hero-product" data-name="Ceramic Mug" data-price="$18" style="--c:#f5e6d3">
+      <span class="emo">☕</span><span class="tag">Ceramic Mug · $18</span>
+    </button>
+    <button class="hero-product p2" data-name="Linen Tote" data-price="$32" style="--c:#e8efe4">
+      <span class="emo">👜</span><span class="tag">Linen Tote · $32</span>
+    </button>
+    <button class="hero-product p3" data-name="Desk Plant" data-price="$24" style="--c:#e4ecef">
+      <span class="emo">🪴</span><span class="tag">Desk Plant · $24</span>
+    </button>
+    <div class="float-badge b1">⭐ 4.8 rating</div>
+    <div class="float-badge b2">🚚 Free shipping $50+</div>
+    <div class="spotlight" id="spotlight">
+      <span>Picked for you</span>
+      <strong id="spotName">Ceramic Mug</strong>
+      <em id="spotPrice">$18</em>
+    </div>
+  </div>
+</div></section>
+
+<!-- 2. Featured products -->
+<section class="alt"><div class="wrap">
+  <div class="center reveal"><div class="eyebrow">Best sellers</div><h2>Customer favorites</h2>
+  <p class="lead">The pieces people reorder again and again.</p></div>
+  <div class="grid" style="margin-top:40px">
+    <div class="card reveal"><div class="pimg" style="background:#f5e6d3">☕</div><h3>Ceramic Mug</h3><p class="muted">Hand-glazed 350 ml.</p><p class="price" style="margin-top:8px">$18</p><button class="btn" data-add="1" style="margin-top:12px;width:100%">Add to cart</button></div>
+    <div class="card reveal"><div class="pimg" style="background:#e8efe4">👜</div><h3>Linen Tote</h3><p class="muted">Sturdy everyday carry.</p><p class="price" style="margin-top:8px">$32</p><button class="btn" data-add="2" style="margin-top:12px;width:100%">Add to cart</button></div>
+    <div class="card reveal"><div class="pimg" style="background:#e4ecef">🪴</div><h3>Desk Plant</h3><p class="muted">Low-light friendly.</p><p class="price" style="margin-top:8px">$24</p><button class="btn" data-add="3" style="margin-top:12px;width:100%">Add to cart</button></div>
+    <div class="card reveal"><div class="pimg" style="background:#f0e4ea">👟</div><h3>Canvas Sneakers</h3><p class="muted">All-day comfort.</p><p class="price" style="margin-top:8px">$58</p><button class="btn" data-add="4" style="margin-top:12px;width:100%">Add to cart</button></div>
+  </div>
+</div></section>
+
+<!-- 3. Why choose us -->
+<section><div class="wrap">
+  <div class="center reveal"><div class="eyebrow">Why us</div><h2>Shopping that feels right</h2></div>
+  <div class="grid" style="margin-top:40px">
+    <div class="card reveal"><div class="icon">🌿</div><h3>Responsibly sourced</h3><p class="muted">We work with makers who use sustainable materials and fair practices.</p></div>
+    <div class="card reveal"><div class="icon">📦</div><h3>Free shipping over $50</h3><p class="muted">Fast delivery on larger orders, with tracking on every parcel.</p></div>
+    <div class="card reveal"><div class="icon">↩️</div><h3>30-day returns</h3><p class="muted">Not the right fit? Send it back within 30 days, no questions asked.</p></div>
+  </div>
+</div></section>
+
+<!-- 4. How it works -->
+<section class="alt"><div class="wrap">
+  <div class="center reveal"><div class="eyebrow">How it works</div><h2>Three simple steps</h2></div>
+  <div class="grid" style="margin-top:40px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <div class="card reveal"><div class="num" style="width:44px;height:44px;border-radius:50%;background:#1f2933;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:12px">1</div><h3>Browse</h3><p class="muted">Explore categories and find something you love.</p></div>
+    <div class="card reveal"><div class="num" style="width:44px;height:44px;border-radius:50%;background:#1f2933;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:12px">2</div><h3>Add to cart</h3><p class="muted">Pick your sizes and quantities, then review your order.</p></div>
+    <div class="card reveal"><div class="num" style="width:44px;height:44px;border-radius:50%;background:#1f2933;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:12px">3</div><h3>Get it delivered</h3><p class="muted">Check out securely and track your order to your door.</p></div>
+  </div>
+</div></section>
+
+<!-- 5. Testimonials -->
+<section><div class="wrap">
+  <div class="center reveal"><div class="eyebrow">Reviews</div><h2>Loved by our customers</h2></div>
+  <div class="grid" style="margin-top:40px">
+    <blockquote class="card reveal quote">“The mug feels beautiful in hand and the shipping was quicker than expected.”<footer>— Ayesha K., verified buyer</footer></blockquote>
+    <blockquote class="card reveal quote">“Great quality for the price. The tote has become my daily bag.”<footer>— Daniel R., verified buyer</footer></blockquote>
+    <blockquote class="card reveal quote">“Customer support answered within an hour and made the return painless.”<footer>— Mei L., verified buyer</footer></blockquote>
+  </div>
+</div></section>
+
+<!-- 6. Stats -->
+<section class="alt"><div class="wrap stats">
+  <div class="stat reveal"><strong>12k+</strong><span class="muted">Happy customers</span></div>
+  <div class="stat reveal"><strong>4.8★</strong><span class="muted">Average rating</span></div>
+  <div class="stat reveal"><strong>150+</strong><span class="muted">Curated products</span></div>
+  <div class="stat reveal"><strong>24h</strong><span class="muted">Support response</span></div>
+</div></section>
+
+<!-- 7. Call to action -->
+<section><div class="wrap"><div class="cta reveal">
+  <h2>Join our newsletter</h2>
+  <p>Get early access to new arrivals and a 10% welcome discount.</p>
+  <form data-demo="Thanks for subscribing! Check your inbox for your discount."><input type="email" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></form>
+  <div class="notice" style="color:#fdba74"></div>
+</div></div></section>
+
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body></html>

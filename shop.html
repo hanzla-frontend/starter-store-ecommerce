@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop | Starter Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div id="site-header"></div>
+<section class="page-head"><div class="wrap"><div class="eyebrow">Shop</div><h1>All products</h1><p class="lead">Filter by category to find what you need.</p></div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+<div id="site-footer"></div>
+<script src="script.js"></script>
+<script>
+const P=[
+{id:1,n:"Ceramic Mug",c:"Home",p:18,e:"☕",t:"#f5e6d3"},{id:3,n:"Desk Plant",c:"Home",p:24,e:"🪴",t:"#e4ecef"},
+{id:2,n:"Linen Tote",c:"Bags",p:32,e:"👜",t:"#e8efe4"},{id:4,n:"Canvas Sneakers",c:"Shoes",p:58,e:"👟",t:"#f0e4ea"},
+{id:5,n:"Wool Beanie",c:"Accessories",p:22,e:"🧢",t:"#ece8f5"},{id:6,n:"Notebook Set",c:"Stationery",p:14,e:"📓",t:"#f7f0d9"}];
+const cats=["All",...new Set(P.map(x=>x.c))];let cur="All";
+function draw(){
+  document.getElementById("chips").innerHTML=cats.map(c=>`<button class="chip ${c===cur?"active":""}" data-c="${c}">${c}</button>`).join("");
+  document.getElementById("grid").innerHTML=P.filter(x=>cur==="All"||x.c===cur).map(x=>`
+    <div class="card"><div class="pimg" style="background:${x.t}">${x.e}</div><h3>${x.n}</h3><p class="muted">${x.c}</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><span class="price">$${x.p}</span>
+    <button class="btn" data-add="${x.id}" style="padding:8px 14px;font-size:.9rem">Add to cart</button></div></div>`).join("");
+}
+document.getElementById("chips").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(b){cur=b.dataset.c;draw();}});
+draw();
+</script>
+</body></html>
